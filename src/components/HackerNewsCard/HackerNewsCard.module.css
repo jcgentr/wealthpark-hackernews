@@ -1,0 +1,57 @@
+.card {
+  text-align: left;
+  background-color: rgb(14, 146, 240);
+  width: 75%;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+.cardFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  color: rgb(247, 255, 96);
+}
+
+.cardAuthor {
+  color: rgb(228, 229, 214);
+}
+
+.cardLink {
+  font-size: 2rem;
+  width: 10px;
+}
+
+/* If the screen size is 601px wide or more */
+@media screen and (min-width: 601px) {
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardAuthor {
+    font-size: 1rem;
+  }
+
+  .cardLink {
+    width: 1.3rem;
+  }
+}
+
+/* If the screen size is 600px wide or less */
+@media screen and (max-width: 600px) {
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardAuthor {
+    font-size: 0.8rem;
+  }
+
+  .cardLink {
+    width: 1rem;
+  }
+}
